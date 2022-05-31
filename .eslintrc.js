@@ -1,29 +1,28 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
+    node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
-    'plugin:prettier/recommended'
-  ],
+  plugins: ['prettier'],
+  extends: ['plugin:vue/vue3-recommended', 'airbnb-base', 'plugin:prettier/recommended'],
   parserOptions: {
-    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
     sourceType: 'module',
+    ecmaVersion: 2020,
+    requireConfigFile: false,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: [
-    'vue',
-  ],
   rules: {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/no-absolute-path': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
-    "vue/no-multiple-template-root": 'off',
     'no-plusplus': 'off',
-    'no-console': 'off',
     'no-shadow': 'off', // 允许局部变量替换全局变量
     // 允许在 case 或 default 子句中出现词法声明
     'no-case-declarations': 'off',
@@ -85,4 +84,10 @@ module.exports = {
       },
     ],
   },
-};
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+  },
+}
