@@ -83,6 +83,7 @@ module.exports = {
         groups: [],
       },
     ],
+    'no-console': 'off',
   },
   globals: {
     defineProps: 'readonly',

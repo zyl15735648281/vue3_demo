@@ -38,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "cesium": "^1.93.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
@@ -55,7 +56,9 @@
     "unplugin-auto-import": "^0.8.6",
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.9",
-    "vite-plugin-eslint": "^1.6.1"
+    "vite-plugin-cesium": "^1.2.19",
+    "vite-plugin-eslint": "^1.6.1",
+    "vite-plugin-windicss": "^1.8.4"
   },
   "config": {
     "commitizen": {

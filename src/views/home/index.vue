@@ -1,14 +1,17 @@
 <template>
-  <div>这是首页</div>
-  <el-button>Default</el-button>
-  <Demo />
+  <div id="cesiumContainer"></div>
 </template>
 <script setup name="Home">
+import * as Cesium from 'cesium'
 import { onMounted } from 'vue'
-import { test } from '@/api/demo.js'
-import { Demo } from '@/components/Demo'
 
 onMounted(() => {
-  test({ id: 123 })
+  // test({ id: 123 })
+  // const viewer = new Cesium.Viewer('cesiumContainer')
+  window.viewer = new Cesium.Viewer('cesiumContainer', {
+    infoBox: false,
+  })
+
+  // console.log(viewer)
 })
 </script>
