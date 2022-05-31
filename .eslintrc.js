@@ -21,7 +21,9 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
+    "vue/no-multiple-template-root": 'off',
     'no-plusplus': 'off',
+    'no-console': 'off',
     'no-shadow': 'off', // 允许局部变量替换全局变量
     // 允许在 case 或 default 子句中出现词法声明
     'no-case-declarations': 'off',

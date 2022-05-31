@@ -1,5 +1,5 @@
 import { ElMessage, ElMessageBox } from 'element-plus'
-import useUserStore from '@/store/user'
+import useUserStore from '@/store/modules/user'
 
 export function checkStatus(status, msg, errorMessageMode = 'message') {
   const userStore = useUserStore()

@@ -6,7 +6,7 @@ import { checkStatus } from './checkStatus'
 import { isString } from '@/utils/is'
 import { deepMerge, setObjToUrlParams } from '@/utils'
 import { formatRequestDate, joinTimestamp } from './helper'
-import useUserStore from '@/store/user'
+import useUserStore from '@/store/modules/user'
 
 const isDevMode = import.meta.env.DEV // 是否是dev
 const urlPrefix = '' // 拼接接口
